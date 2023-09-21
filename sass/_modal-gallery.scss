@@ -1,0 +1,369 @@
+@use 'variables' as v;
+@use 'mixins';
+
+.modal-gallery{
+    
+    width: 550px;
+    
+    &__background{
+        @include mixins.modal-background;
+        display: none;
+        place-content: center;
+    }
+    &__close-container{
+        text-align: right;
+        height: 30px;
+    }
+    
+    &__close{
+        width: 16px;
+        text-align: right;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    &__image-container{
+        background-image: url('../MEDIA/image-product-1.png');
+        height: 446px;
+        background-size: cover;
+        border-radius: 16px;
+        margin-bottom: 32px;
+        position: relative;
+        
+    }
+    &__thumnails{
+        display: flex;
+        justify-content: space-between;
+        width: 450px;
+        margin: auto;
+    }
+    &__thumnail{
+        width: 90px;
+        border-radius: 16px;
+        &:hover{
+            cursor: pointer;
+            border: 2px solid v.$Orange;
+        }
+    }
+    &__previus{
+        @include mixins.image-btn(190px, -15px, true)
+    }
+    &__next{
+        @include mixins.image-btn(190px, 520px, true) 
+    }
+    
+}
+
+.modal-gallery{
+    width: 550px;
+    
+    &__background2{
+        @include mixins.modal-background;
+        display: none;
+        place-content: center;
+    }
+    &__close-container{
+        text-align: right;
+        height: 30px;
+    }
+    
+    &__close{
+        width: 16px;
+        text-align: right;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    &__image-container2{
+        background-image: url('../MEDIA/image-product2-1.png');
+        height: 446px;
+        background-size: cover;
+        border-radius: 16px;
+        margin-bottom: 32px;
+        position: relative;
+        
+    }
+    &__thumnails{
+        display: flex;
+        justify-content: space-between;
+        width: 450px;
+        margin: auto;
+    }
+    &__thumnail{
+        width: 90px;
+        border-radius: 16px;
+        &:hover{
+            cursor: pointer;
+            border: 2px solid v.$Orange;
+        }
+    }
+    &__previus{
+        @include mixins.image-btn(190px, -15px, true)
+    }
+    &__next{
+        @include mixins.image-btn(190px, 520px, true) 
+    }
+}
+
+
+.modal-gallery{
+    width: 550px;
+    
+    &__background3{
+        @include mixins.modal-background;
+        display: none;
+        place-content: center;
+    }
+    &__close-container{
+        text-align: right;
+        height: 30px;
+    }
+    
+    &__close{
+        width: 16px;
+        text-align: right;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    &__image-container3{
+        background-image: url('../MEDIA/image-product3-1.png');
+        height: 446px;
+        background-size: cover;
+        border-radius: 16px;
+        margin-bottom: 42px;
+        position: relative;
+        
+    }
+    &__thumnails{
+        display: flex;
+        justify-content: space-between;
+        width: 450px;
+        margin: auto;
+    }
+    &__thumnail{
+        width: 90px;
+        border-radius: 16px;
+        &:hover{
+            cursor: pointer;
+            border: 2px solid v.$Orange;
+        }
+    }
+    &__previus{
+        @include mixins.image-btn(190px, -15px, true)
+    }
+    &__next{
+        @include mixins.image-btn(190px, 520px, true) 
+    }
+}
+
+// 
+.modal-gallery{
+    width: 550px;
+    
+    &__background4{
+        @include mixins.modal-background;
+        display: none;
+        place-content: center;
+    }
+    &__close-container{
+        text-align: right;
+        height: 30px;
+    }
+    
+    &__close{
+        width: 16px;
+        text-align: right;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    &__image-container4{
+        background-image: url('../MEDIA/image-product4-1.png');
+        height: 446px;
+        background-size: cover;
+        border-radius: 16px;
+        margin-bottom: 42px;
+        position: relative;
+        
+    }
+    &__thumnails{
+        display: flex;
+        justify-content: space-between;
+        width: 450px;
+        margin: auto;
+    }
+    &__thumnail{
+        width: 90px;
+        border-radius: 16px;
+        &:hover{
+            cursor: pointer;
+            border: 2px solid v.$Orange;
+        }
+    }
+    &__previus{
+        @include mixins.image-btn(190px, -15px, true)
+    }
+    &__next{
+        @include mixins.image-btn(190px, 520px, true) 
+    }
+}
+
+// 
+.modal-gallery{
+    width: 550px;
+    
+    &__background5{
+        @include mixins.modal-background;
+        display: none;
+        place-content: center;
+    }
+    &__close-container{
+        text-align: right;
+        height: 30px;
+    }
+    
+    &__close{
+        width: 16px;
+        text-align: right;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    &__image-container5{
+        background-image: url('../MEDIA/image-product5-1.png');
+        height: 446px;
+        background-size: cover;
+        border-radius: 16px;
+        margin-bottom: 42px;
+        position: relative;
+        
+    }
+    &__thumnails{
+        display: flex;
+        justify-content: space-between;
+        width: 450px;
+        margin: auto;
+    }
+    &__thumnail{
+        width: 90px;
+        border-radius: 16px;
+        &:hover{
+            cursor: pointer;
+            border: 2px solid v.$Orange;
+        }
+    }
+    &__previus{
+        @include mixins.image-btn(190px, -15px, true)
+    }
+    &__next{
+        @include mixins.image-btn(190px, 520px, true) 
+    }
+}
+
+// 
+.modal-gallery{
+    width: 550px;
+    
+    &__background6{
+        @include mixins.modal-background;
+        display: none;
+        place-content: center;
+    }
+    &__close-container{
+        text-align: right;
+        height: 30px;
+    }
+    
+    &__close{
+        width: 16px;
+        text-align: right;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    &__image-container6{
+        background-image: url('../MEDIA/image-product6-1.png');
+        height: 446px;
+        background-size: cover;
+        border-radius: 16px;
+        margin-bottom: 42px;
+        position: relative;
+        
+    }
+    &__thumnails{
+        display: flex;
+        justify-content: space-between;
+        width: 450px;
+        margin: auto;
+    }
+    &__thumnail{
+        width: 90px;
+        border-radius: 16px;
+        &:hover{
+            cursor: pointer;
+            border: 2px solid v.$Orange;
+        }
+    }
+    &__previus{
+        @include mixins.image-btn(190px, -15px, true)
+    }
+    &__next{
+        @include mixins.image-btn(190px, 520px, true) 
+    }
+}
+
+// 
+
+.modal-gallery{
+    width: 550px;
+    
+    &__background7{
+        @include mixins.modal-background;
+        display: none;
+        place-content: center;
+    }
+    &__close-container{
+        text-align: right;
+        height: 30px;
+    }
+    
+    &__close{
+        width: 16px;
+        text-align: right;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    &__image-container7{
+        background-image: url('../MEDIA/image-product7-1.png');
+        height: 446px;
+        background-size: cover;
+        border-radius: 16px;
+        margin-bottom: 42px;
+        position: relative;
+        
+    }
+    &__thumnails{
+        display: flex;
+        justify-content: space-between;
+        width: 450px;
+        margin: auto;
+    }
+    &__thumnail{
+        width: 90px;
+        border-radius: 16px;
+        &:hover{
+            cursor: pointer;
+            border: 2px solid v.$Orange;
+        }
+    }
+    &__previus{
+        @include mixins.image-btn(190px, -15px, true)
+    }
+    &__next{
+        @include mixins.image-btn(190px, 520px, true) 
+    }
+}
+
+// 

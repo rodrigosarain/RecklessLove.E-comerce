@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Shop! </title>
+
+    <link rel="stylesheet" href="/styles.css">
+
+    <style>
+        .atribution {font-size: 16px; text-align: center; }
+        .atribution {color: darkblue;}  
+    </style>
+</head>
+<body>
+
+    <main class="main-container">
+        <header class="header">
+            <div class="header__navigation">
+                <img class="header__menu" src="../MEDIA/menu.png" alt="menu hamburguesa ">
+
+                <nav class="navbar">
+                    <ul class="navbar__items">
+                        <li><a class="navbar__link" href="../index.html">Home</a></li>
+                        <li><a class="navbar__link" href="./SHOP.html">Shop</a></li>
+                        <li><a class="navbar__link" href="./Contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+    
+            <!-- modal navbar  -->
+            <div class="modal-navbar__background">
+                <nav class="modal-navbar">
+                    <img class="modal-navbar__close"  src="../MEDIA/x.png" alt="close logo">
+                    <ul class="modal-navbar__items">
+                        <li><a class="modal-navbar__link" href="../index.html">Home</a></li>
+                        <li><a class="modal-navbar__link" href="./SHOP.html">Shop</a></li>
+                        <li><a class="modal-navbar__link" href="./Contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- final -->
+
+                <div class="header__cart">
+                    <div class="header__cart--notification">0</div>
+                    <img class="header__cart-image" src="../MEDIA/carrito-de-compras.png" alt="">
+                </div>
+        </header>
+        <section class="content">
+            <article class="gallery">
+                <div class="gallery__image-container3">
+                    <img  class="gallery__previus" src="../MEDIA/atras.png" alt="previus">
+                    <img class="gallery__next" src="../MEDIA/flecha.png" alt="next">
+                </div>
+                <div class="gallery__thumnails">
+                    <img  id="1" class="gallery__thumnail"  src="../MEDIA/image-product3-1.png" alt="thumnail">
+                    <img  id="2" class="gallery__thumnail"  src="../MEDIA/image-product3-2.png" alt="thumnail">
+                    <img  id="3" class="gallery__thumnail"  src="../MEDIA/image-product3-3.png" alt="thumnail">
+                    <img  id="4" class="gallery__thumnail"  src="../MEDIA/image-product3-4.png" alt="thumnail">
+                </div>
+            </article>
+
+            <article class="details">
+                <h2 class="details__company"> Reckless Love </h2>
+                <h2 class="details__title"> Angel Cotton CrewNek</h2>
+                <p class="details__description"> Desire be desire go. Angels watch over me</p>
+                <div class="details__prices">
+                    <p class="details__now"> $200.00  <span class="details__discount">50%</span> </p>
+                    <p class="details__before"> $400.00</p>
+                </div>
+                <div class="details__product-quantity">
+                    <div class="input">
+                        <img class="input__minus" src="../MEDIA/signo-menos-de-una-linea-en-posicion-horizontal.png" alt="minus">
+                        <input class="input__number" type="text" value="0">
+                        <img class="input__plus" src="../MEDIA/anadir.png" alt="plus">
+                    </div>
+                    <button class="details__button"> <img src="../MEDIA/carrito-de-compras-white.png" alt="cart">Add to cart</button>
+                </div>
+            </article>
+        </section>
+
+        <!-- modalcart inicio -->
+        <div class="cart-modal">
+            <p class="cart-modal__title">Cart</p>
+            <div class="cart-modal__checkout-container">
+                <div class="cart-modal__details-container">
+                    <img class="cart-modal__image" src="../MEDIA/image-product3-1.png" alt="">
+                    <div>
+                        <p class="cart-modal__product">Angel Cotton CrewNek</p>
+                        <p class="cart-modal__price">$200 x3 <span>$600.00</span></p>
+                    </div>
+                    <img  class="cart-modal__delete" src="../MEDIA/borrar.png" alt="">
+                </div>
+                <div class="cart-modal__pay-off">
+                    <a href="../CardPay.html"> <img class="cart-modal__pay"  src="../MEDIA/punto-de-venta.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <!-- fin -->
+    </main>
+       
+           <!-- inicio modal-gallery -->
+           <div class="modal-gallery__background3">
+            <article class="modal-gallery">
+                <div class="modal-gallery__close-container">
+                    <img class="modal-gallery__close" src="../MEDIA/x.png" alt="">
+                </div>
+                <div class="modal-gallery__image-container3">
+                    <img  class="modal-gallery__previus" src="../MEDIA/atras.png" alt="previus">
+                    <img class="modal-gallery__next" src="../MEDIA/flecha.png" alt="next">
+                </div>
+                <div class="modal-gallery__thumnails">
+                    <img  id="m1" class="modal-gallery__thumnail"  src="../MEDIA/image-product3-1.png" alt="thumnail">
+                    <img  id="m2" class="modal-gallery__thumnail"  src="../MEDIA/image-product3-2.png" alt="thumnail">
+                    <img  id="m3" class="modal-gallery__thumnail"  src="../MEDIA/image-product3-3.png" alt="thumnail">
+                    <img  id="m4" class="modal-gallery__thumnail"  src="../MEDIA/image-product3-4.png" alt="thumnail">
+                </div>
+            </article>
+            </div>
+            <!-- fin -->
+    
+    <div class="atribution">
+        Reckles Love Ⓡ 
+        What is real will prosper 
+    </div>
+   
+    <script src="../JS/angel.js"></script>
+
+</body>
+</html>

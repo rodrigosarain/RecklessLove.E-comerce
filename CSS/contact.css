@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* navbar */
+
+
+.header__menu{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.header__menu:hover {
+    cursor: pointer;
+  }
+
+.navbar {
+    display: none;
+    width: 400px;
+  }
+
+  .navbar__items{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  .navbar__link {
+    text-decoration: none;
+    color: hsl(219, 9%, 45%);
+    display: block;
+    height: 112px;
+    padding-top: 42px;
+  }
+
+  
+  .modal-navbar {
+    background-color: hsl(0, 0%, 100%);
+    width: 250px;
+    height: 100%;
+    padding: 28px 24px;
+  }
+  .modal-navbar__background {
+    display: none;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+  }
+  .modal-navbar__items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+    list-style: none;
+    margin-top: 30px;
+  }
+  .modal-navbar__link {
+    text-decoration: none;
+    color: hsl(220, 13%, 13%);
+    font-weight: 700;
+    font-size: 1.1em;
+  }
+  .modal-navbar__close:hover {
+    cursor: pointer;
+  }
+
+
+
+
+
+
+
+
+
+/*  */
+:focus{
+    outline: none;
+}
+
+body{
+    background: #f1eded;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* formulario */
+.form_wrap{
+    width: 1050px;
+    height: 530px;
+    margin: 50px auto;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0,2);
+    background: white;
+}
+
+/* contact info */
+
+.contact_info::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(51, 51, 51, 0.856);
+    opacity: 0.9;
+}
+
+.contact_info{
+    width: 38%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../MEDIA/image-index-2.jpg');
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.contact_info img{
+    width: 30px;
+    margin-right: 10px;
+}
+
+
+.info_title,
+.info_items{
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+.info_title{
+    margin-bottom: 60px;
+}
+
+.info_title span{
+    font-size: 100px;
+    display: block;
+    text-align: center;
+}
+
+.info_title h2{
+    font-size: 35px;
+    text-align: center;
+}
+
+.info_items p{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.info_title img{
+    width: 100px;
+}
+
+/* formulario de contact */
+form.form_contact{
+    width: 62%;
+    padding: 30px 40px;
+}
+
+form.form_contact h2{
+    font-size: 25px;
+    font-weight: 700;
+    color: #3030;
+    margin-bottom: 30px;
+}
+
+form.form_contact .user_info{
+    display: flex;
+    flex-direction: column;
+}
+
+form.form_contact label{
+    font-weight: 700;
+}
+
+form.form_contact input,
+form.form_contact textarea{
+    width: 100%;
+    padding: 8px 0px 5px;
+    border: none;
+    border-bottom: 2px solid #D1D1D1;
+
+    margin-bottom: 20px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: #5A5A5A;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+form.form_contact textarea{
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 90px;
+}
+
+form.form_contact input[type="button"]{
+    width: 180px;
+    color: #ff5d1e;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    align-self: flex-end;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+form.form_contact input[type="button"]:hover{
+    background: rgb(163, 159, 159);
+}
+
+
+/* Modal */
+
+.modal_wrap{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mensaje_modal{
+    background: white;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    width: 400px;
+    padding: 30px 20px 15px;
+}
+
+.mensaje_modal h3{
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+.mensaje_modal h3::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #C5C5C5;
+    margin: 10px 0px 15px;
+}
+
+.mensaje_modal p{
+    font-size: 16px;
+    color: #606060;
+}
+
+.mensaje_modal #btnClose{
+    /* display: inline-block; */
+    padding: 3px 10px;
+    margin-top: 10px;
+    color: white;
+    background: #E25151;
+    border: 2px solid #B14141;
+    cursor: pointer;
+
+    float: right;
+
+}

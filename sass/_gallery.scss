@@ -1,0 +1,143 @@
+@use 'variables' as v;
+@use 'mixins';
+
+.gallery{
+    &__image-container{
+        height: 300px;
+        width: 100%;
+        background-image: url('../MEDIA/image-product-1.png');
+        background-position-y: -35px ;
+        background-size:cover;
+        &:hover{
+            cursor: pointer;
+        }
+
+    }
+    &__previus{
+       @include mixins.image-btn(170px, 15px, false);
+    }
+    &__next{
+        @include mixins.image-btn(170px,320px, false);
+    }
+    &__thumnails{
+        display: none;
+        @media (min-width:1115px){
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    &__thumnail{
+        width: 90px;
+        border-radius: 16px;
+        &:hover{
+            cursor: pointer;
+            border: 2px solid v.$Orange;
+        }
+    }
+    @media (min-width: 1115px){   
+        width: 446px;     
+        &__image-container{
+            background-position-y: 0 ;
+            border-radius: 16px;
+            height: 446px;
+            margin-bottom: 32px;
+        }
+        &__image-container2{
+            background-position-y: 0 ;
+            border-radius: 16px;
+            height: 446px;
+            margin-bottom: 32px;
+        }
+        &__image-container3{
+            background-position-y: 0 ;
+            border-radius: 16px;
+            height: 446px;
+            margin-bottom: 32px;
+        }
+        &__image-container4{
+            background-position-y: 0 ;
+            border-radius: 16px;
+            height: 446px;
+            margin-bottom: 32px;
+        }
+        &__image-container5{
+            background-position-y: 0 ;
+            border-radius: 16px;
+            height: 446px;
+            margin-bottom: 32px;
+        }
+        &__image-container6{
+            background-position-y: 0 ;
+            border-radius: 16px;
+            height: 446px;
+            margin-bottom: 32px;
+        }
+        &__image-container7{
+            background-position-y: 0 ;
+            border-radius: 16px;
+            height: 446px;
+            margin-bottom: 32px;
+        }
+        
+    }
+    &__image-container2{
+        height: 400px;
+        width: 100%;
+        background-image: url('../MEDIA/image-product2-1.png');
+        background-position-y: -35px ;
+        background-size:cover;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    &__image-container3{
+        height: 400px;
+        width: 100%;
+        background-image: url('../MEDIA/image-product3-1.png');
+        background-position-y: -35px ;
+        background-size:cover;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    &__image-container4{
+        height: 400px;
+        width: 100%;
+        background-image: url('../MEDIA/image-product4-1.png');
+        background-position-y: -22px ;
+        background-size:cover;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    &__image-container5{
+        height: 400px;
+        width: 100%;
+        background-image: url('../MEDIA/image-product5-1.png');
+        background-position-y: -35px ;
+        background-size:cover;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    &__image-container6{
+        height: 400px;
+        width: 100%;
+        background-image: url('../MEDIA/image-product6-1.png');
+        background-position-y: -35px ;
+        background-size:cover;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    &__image-container7{
+        height: 400px;
+        width: 100%;
+        background-image: url('../MEDIA/image-product7-1.png');
+        background-position-y: -35px ;
+        background-size:cover;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}

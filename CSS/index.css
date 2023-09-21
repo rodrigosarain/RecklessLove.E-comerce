@@ -1,0 +1,88 @@
+* {
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+.header__menu{
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.header__menu:hover {
+  cursor: pointer;
+  }
+
+.navbar {
+  display: none;
+  width: 400px;
+  }
+
+  .navbar__items{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  .navbar__link {
+    text-decoration: none;
+    color: hsl(219, 9%, 45%);
+    display: block;
+    height: 112px;
+    padding-top: 42px;
+  }
+
+  
+  .modal-navbar {
+    background-color: hsl(0, 0%, 100%);
+    width: 250px;
+    height: 100%;
+    padding: 28px 24px;
+  }
+  .modal-navbar__background {
+    display: none;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+  }
+  .modal-navbar__items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+    list-style: none;
+    margin-top: 30px;
+  }
+  .modal-navbar__link {
+    text-decoration: none;
+    color: hsl(220, 13%, 13%);
+    font-weight: 700;
+    font-size: 1.1em;
+  }
+  .modal-navbar__close:hover {
+    cursor: pointer;
+  }
+  
+
+/* styles inicio */
+  
+  #image-track {
+    display: flex;
+    gap: 4vmin;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(0%, -50%); 
+    user-select: none; /* -- Prevent image highlighting -- */
+  }
+  
+  #image-track > .image {
+    width: 40vmin;
+    height: 56vmin;
+    object-fit: cover;
+    object-position: 100% center;
+  }
+
+ 

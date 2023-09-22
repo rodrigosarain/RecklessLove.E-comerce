@@ -285,3 +285,20 @@ form.form_contact input[type="button"]:hover{
     float: right;
 
 }
+
+@media only screen and (max-width: 414px){
+    .form_wrap{
+        width: 400px;
+    }
+    .contact_info{
+        display: flex;
+        flex-direction: column;
+        zoom: 50%;
+        width: 810px;
+        height: 1100px;
+    }
+    form.form_contact{
+        zoom: 80%;
+        width: 560px;
+    }
+}

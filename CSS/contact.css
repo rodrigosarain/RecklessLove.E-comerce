@@ -301,4 +301,7 @@ form.form_contact input[type="button"]:hover{
         zoom: 80%;
         width: 560px;
     }
+    .modal-navbar__background{
+        z-index: 3;
+    }
 }
